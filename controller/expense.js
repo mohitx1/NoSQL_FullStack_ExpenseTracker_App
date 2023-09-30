@@ -32,8 +32,8 @@ const addExpense = async (req, res) => {
 const getExpenses = async (req, res) => {
   try {
     // Find expenses for the authenticated user based on the userId field
-    console.log('we are fetching expenses')
-    console.log(req.user._id )
+    // console.log('we are fetching expenses')
+    // console.log(req.user._id )
     const expenses = await Expense.find({userId: req.user._id});
 
     return res.status(200).json({ expenses, success: true });
