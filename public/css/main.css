@@ -5,6 +5,13 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+/* main{
+    padding: 4rem;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+} */
+
 main{
     padding: 1rem;
 }
