@@ -26,7 +26,6 @@ app.use('/expense', expenseRoutes);
 app.use('/purchase', purchaseRoutes);
 app.use('/premium', premiumFeatureRoutes);
 
-// Define MongoDB models and relationships here, similar to Sequelize
 
 app.use(express.static('public'));
 

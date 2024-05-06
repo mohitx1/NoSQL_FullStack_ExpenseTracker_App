@@ -52,7 +52,8 @@ const deleteExpense = async (req, res) => {
     }
 
     // Delete the expense document by ID and userId to ensure it belongs to the user
-    const deletedExpense = await Expense.findOneAndDelete({ _id: expenseid, userId: req.user._id });
+    const deletedExpense = await Expense.findOneAndRemove({userId: req.user._id});
+    // const deletedExpense = await Expense.findOneAndDelete({ _id: expenseid, userId: req.user._id });
 
     if (!deletedExpense) {
       return res.status(404).json({ success: false, message: 'Expense does not belong to the user' });
