@@ -7,8 +7,8 @@
   "license": "ISC",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon -e js,json,env,html,css",
-    "start-server": "node app.js"
+    "start":"node app.js" ,
+    "start-server": "nodemon -e js,json,env,html,css"
   },
   "devDependencies": {
     "nodemon": "^1.18.3"
